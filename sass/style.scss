@@ -1,3 +1,13 @@
+body{
+	overflow-x:hidden;
+}
+
+$w: white;
+
+a{
+	text-decoration: none;
+	color: $w;
+}
 
 header{
 	width: 1600px;
@@ -11,8 +21,92 @@ header{
 	box-sizing:border-box;
 }
 
+
+
 .bgphoto{
 	display: block;
+	background-image: url("../img/Color Fill 1.png");
 	width: 1600px;
 	height: 750px;
+	padding-top: 50px;
+	padding-right: 80px;
+	padding-left: 80px;
+
+}
+
+
+.img_logo{
+	width: 30px;
+	height: 30px;
+}
+
+.logo{
+	display: flex;
+}
+.logo_text_uper{
+	padding: 0px 0px 0px 10px;
+	color: $w;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
+.logo_text_lower{
+	padding: 0px 0px 0px 10px;
+	margin: 17px 0px 0px -50px;
+	color: $w;
+	font-family: 'Raleway';
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.menu_list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 340px;
+	margin: 0;
+	color: $w;
+
+
+}
+
+.menu_list_link{
+	list-style-position: inside;
+	font: 15px 'Raleway', sans-serif;
+	
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: all .3s;
+	list-style-type: none; 
+	font-weight: bold;
+	&:hover {
+		color: #061e37;
+	}
+}
+
+.sign-up_button{
+  text-decoration: none;
+  
+    color: $w;
+    width: 85px;
+    height: 25px;
+    padding: 4px 20px;
+    font-size: 12px;
+    border: 1px solid $w;
+    border-radius: 2px;
+    margin-left: 348px;
+    margin-top: 5px;
+    transition: all .3s;
+    font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+    &:hover{
+    	background-color: #fff;
+    	color: #061e37;
+    }
+    
+
+    
 }
