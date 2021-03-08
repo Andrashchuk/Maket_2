@@ -1,5 +1,12 @@
 body{
 	overflow-x:hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+%shadow{
+	-webkit-box-shadow: 0px 7px 5px -5px rgba(34, 60, 80, 0.6);
+	-moz-box-shadow: 0px 7px 5px -5px rgba(34, 60, 80, 0.6);
+	box-shadow: 0px 7px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
 $w: white;
@@ -47,7 +54,7 @@ header{
 	padding: 0px 0px 0px 10px;
 	color: $w;
 	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
+	
 	font-size: 15px;
 	
 }
@@ -57,7 +64,7 @@ header{
 	margin: 17px 0px 0px -50px;
 	color: $w;
 	font-family: 'Raleway';
-	font-weight: bold;
+	
 	font-size: 15px;
 }
 
@@ -65,7 +72,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-left: 340px;
+	padding-left: 330px;
 	margin: 0;
 	color: $w;
 
@@ -81,7 +88,7 @@ header{
 	padding-bottom: 10px;
 	transition: all .3s;
 	list-style-type: none; 
-	font-weight: bold;
+	
 	&:hover {
 		color: #061e37;
 	}
@@ -101,12 +108,105 @@ header{
     margin-top: 5px;
     transition: all .3s;
     font-family: 'Raleway', sans-serif;
-	font-weight: bold;
+	
     &:hover{
     	background-color: #fff;
     	color: #061e37;
     }
-    
+}
 
-    
+.main_title{
+	color:$w;
+	font-family: 'Raleway';
+	padding-top: 100px;
+	font-size: 55px;
+}
+
+.main_text{
+	display: inline-block;
+	padding-right: 852px;
+	padding-top: 30px;
+	color: $w;
+}
+
+.header_buttons{
+	display: flex;
+}
+
+.buy_button{
+	width: 150px;
+    height: 55px;
+    background-color: #061e37;
+    color: $w;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 18px;
+    transition: all .3s;
+    margin-top: 45px;
+    font-weight: bold;
+    @extend %shadow;
+    &:hover{
+    	background-color: #fff;
+    	color: #061e37;
+    }
+}
+
+.try_button{
+	width: 160px;
+    height: 55px;
+    background-color: $w;
+    color: #061e37;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 18px;
+    transition: all .3s;
+    margin-top: 45px;
+    margin-left: 30px;
+    font-weight: bold;
+    @extend %shadow;
+    &:hover{
+    	background-color: #061e37;
+    	color: $w;
+    }
+}
+
+.video{
+	width: 600px;
+	height: 320px;
+	background-color: #fff;
+	float: right;
+	margin: -260px 0px 0px 0px;
+	background-image: url("../img/Rounded Rectangle 2.png");
+	border-radius: 3px;
+	@extend %shadow;
+}
+
+.play_button{
+	width: 60px;
+    height: 60px;
+    background-color: #061e37;
+    color: $w;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 18px;
+    transition: all .3s;
+    margin-top: 130px;
+    margin-left: 280px;
+    font-weight: bold;
+    @extend %shadow;
+    position: absolute;
+    &:hover{
+    	background-color: #fff;
+    	color: #061e37;
+    }
+
+}
+
+.play_text{
+	font-size: 12px;
+    font-weight: bold;
+    color: #061e37;
+    line-height: 34;
+    padding-left: 256px;
+
 }
