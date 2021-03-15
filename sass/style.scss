@@ -9,6 +9,21 @@ body{
 	box-shadow: 0px 7px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
+%block_size{
+	padding-top: 100px;
+	padding-right: 80px;
+	padding-left: 80px;
+
+}
+
+%ct{
+	font-weight: 400;
+	color: #cbd4d8;
+	padding-top: 25px;
+	line-height: 1.5;
+	text-align: center;
+}
+
 $w: white;
 
 a{
@@ -20,6 +35,7 @@ header{
 	width: 1600px;
 	margin:0 auto;
 	display: flex;
+
 }
 
 *{
@@ -28,7 +44,13 @@ header{
 	box-sizing:border-box;
 }
 
-
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 .bgphoto{
 	display: block;
@@ -54,7 +76,7 @@ header{
 	padding: 0px 0px 0px 10px;
 	color: $w;
 	font-family: 'Raleway', sans-serif;
-	
+	margin: 0px 0px 0px 0px;
 	font-size: 15px;
 	
 }
@@ -127,6 +149,7 @@ header{
 	padding-right: 852px;
 	padding-top: 30px;
 	color: $w;
+	line-height: 2;
 }
 
 .header_buttons{
@@ -188,7 +211,7 @@ header{
     color: $w;
     border-radius: 3px;
     text-align: center;
-    padding-top: 18px;
+    padding-top: 21px;
     transition: all .3s;
     margin-top: 130px;
     margin-left: 280px;
@@ -209,4 +232,133 @@ header{
     line-height: 34;
     padding-left: 256px;
 
+}
+
+
+section{
+	width: 1600px;
+	margin:0 auto;
+	display: flex;
+}
+
+.content{
+	display: block;
+	width: 1600px;
+	height: 800px;
+	@extend %block_size;
+
+}
+.center_title{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	
+
+}
+
+.title_text{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	color: #cbd4d8;
+	
+}
+
+.center_text{
+	@extend %ct;
+	font-size: 18px;
+	padding: 0px 346px 0px;
+
+}
+
+.ico_title{
+	display: flex;
+	padding-top: 120px;
+}
+
+.img_ico{
+	width: 70px;
+	height: 80px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ico_main_title{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	color: black;
+	padding-top: 45px;
+}
+
+.ico_text{
+	@extend %ct;
+	font-size: 18px;
+	padding: 0px 26px 0px;
+}
+
+.get_button{
+	display: block;
+	width: 160px;
+    height: 55px;
+    background-color: #1de9b6;
+    color: $w;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 18px;
+    transition: all .3s;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+    @extend %shadow;
+    &:hover{
+    	border: 1px solid lightgray;
+    	background-color: $w;
+    	color: black;
+    }
+
+}
+
+.info_blocks{
+	display: flex;
+	width: 1600px;
+	padding-top: 100px;
+}
+
+.bisnes{
+	background-color: #80d8ff;
+	width: 400px;
+	height: 150px;
+	margin: 0px 0px 0px -80px;
+}
+
+
+.download{
+ 	background-color: #82b1ff;
+	width: 400px;
+	height: 150px;
+	
+}
+
+.free{
+	background-color: #b388ff;
+	width: 400px;
+	height: 150px;
+}
+
+.pro{
+ 	background-color: #ea80fc;
+	width: 400px;
+	height: 150px;
+}
+
+.img_info{
+	width: 60px;
+	height: 60px;
+	
 }
